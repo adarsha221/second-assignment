@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +9,10 @@
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/84d1ac553a.js" crossorigin="anonymous"></script>
     <!-- tailwind -->
-     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
 </head>
+
 <body>
     <header>
         <nav class="flex justify-between items-center navbar">
@@ -19,27 +21,33 @@
             </div>
             <div class="nav-list">
                 <ul class="flex gap-6">
-                    <li><a href="">Home</a></li>
-                    <li class="font-light"><a href="">Shop</a></li>
-                    <li class="font-light"><a href="">About us</a></li>
-                    <li><i class="fa-solid fa-cart-shopping"></i></li>
-                    <li><a href="">Cart($56)</a></li>
+                    <div class="nav-hide flex gap-6">
+                        <li><a href="">Home</a></li>
+                        <li class="font-light"><a href="">Shop</a></li>
+                        <li class="font-light"><a href="">About us</a></li>
+                    </div>
+                    <div class="flex gap-2">
+                        <li><i class="fa-solid fa-cart-shopping"></i></li>
+                        <li><a href="">Cart($56)</a></li>
+                    </div>
                 </ul>
             </div>
         </nav>
     </header>
     <main>
-        <section>
-            <div>
-                <h2>ALWAYS <span class=""> FRESH <br>FLOWERS</span></h2>
-                <p>
-                    Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion. 
+        <section class="banner flex">
+            <div class="banner-content">
+                <h2 class="banner-title  space-y-0">ALWAYS <span id="fresh"> FRESH <br>FLOWERS</span></h2>
+                <p class="font-light banner-description">
+                    Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to
+                    exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion.
                 </p>
             </div>
-            <div>
+            <div class="banner-img">
                 <img src="assets/hero-flower.png" alt="">
             </div>
         </section>
     </main>
 </body>
+
 </html>
