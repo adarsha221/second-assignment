@@ -15,7 +15,7 @@
 
 <body>
     <header>
-        <nav class="flex justify-between items-center navbar">
+        <nav class="flex justify-between items-center navbar max-width">
             <div>
                 <img src="assets/logo.png" alt="flower company">
             </div>
@@ -36,7 +36,7 @@
     </header>
     <main>
         <!-- banner section -->
-        <section class="banner flex">
+        <section class="banner flex max-width">
             <div class="banner-content">
                 <h2 class="banner-title  space-y-0">ALWAYS <span id="fresh"> FRESH <br>FLOWERS</span></h2>
                 <p class="font-light banner-description">
@@ -50,7 +50,7 @@
         </section>
 
         <!-- our plants -->
-        <section class="plants">
+        <section class="plants max-width">
             <div>
                 <div class="text-center plants-top">
                     <h3 class="plants-title"><span id="our">Our</span>Plants </h3>
@@ -153,14 +153,15 @@
         </section>
 
         <!-- Deals -->
-        <section class="deals">
+        <section class="deals max-width">
             <!-- deals info -->
             <div class="deals-info text-center">
                 <h3 class="deals-title ">
                     <span id="latest">Latest</span> Deals
                 </h3>
                 <p class="deals-description font-light">
-                    Indulge your senses with the beauty and fragrance of our fresh flower shop. From <br> classic roses to exotic blooms, we offer a wide variety of fresh.
+                    Indulge your senses with the beauty and fragrance of our fresh flower shop. From <br> classic roses
+                    to exotic blooms, we offer a wide variety of fresh.
                 </p>
             </div>
 
@@ -183,7 +184,64 @@
                 </div>
             </div>
         </section>
+
+        <!-- join section -->
+        <section class="join-section">
+            <div class="join-container">
+                <h1 class="join-title noto-serif-font">
+                    Join the colorful Brunch
+                </h1>
+                <form>
+                    <input placeholder="Write Email" type="email">
+                    <button class="join-btn">
+                        Subscribe
+                    </button>
+                </form>
+            </div>
+        </section>
     </main>
+    <footer class="footer flex max-width">
+        <div>
+            <img src="assets/logo.png" alt="">
+            <p class="footer-description font-light">
+                Indulge your senses with the beauty and fragrance of our fresh flower shop. 
+            </p>
+        </div>
+        <div class="footer-list">
+            <ul class="font-light">
+                <li>Home</li>
+                <li>About US</li>
+                <li>Blog</li>
+                <li>FAQ</li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+        <div class="footer-features font-light">
+            <ul>
+                <li><a href="">Features</a></li>
+                <li><a href="">Pricing</a></li>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Terms of Service</a></li>
+                <li>Help Center</li>
+            </ul>
+        </div>
+        <div class="footer-icon">
+            <ul>
+                <li>
+                    <img src="assets/icon-linkedin.png" alt="">
+                </li>
+                <li>
+                    <img src="assets/icon-twitter.png" alt="">
+                </li>
+                <li>
+                    <img src="assets/icon-facebook.png" alt="">
+                </li>
+                <li>
+                    <img src="assets/icon-youtube.png" alt="">
+                </li>
+            </ul>
+        </div>
+    </footer>
 </body>
 
 </html>
