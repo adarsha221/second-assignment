@@ -21,73 +21,307 @@
 }
 
 /* shared styles */
-.display-flex{
+.display-flex {
   display: flex;
 }
-.font-light{
+
+.font-light {
   /* font-size: 1.35rem; */
   font-weight: 400;
   color: rgba(0, 0, 0, 0.5);
 }
 
 
+
 /* nav styles */
-body{
+body {
   max-width: 1140px;
   margin: auto;
 }
-.navbar{
+
+.navbar {
   margin-top: 30px;
 }
+
 /* banner section */
-.banner{
+.banner {
   margin-top: 120px;
   align-items: flex-end;
 }
-.banner-content{
+
+.banner-content {
   max-width: 570px;
 }
-.banner-title{
+
+.banner-title {
   font-size: 4rem;
   font-weight: bold;
   color: black;
   line-height: 1.1;
 }
-.banner-description{
+
+.banner-description {
   font-size: 1.3;
   font-weight: 400;
 }
-.banner-img{
+
+.banner-img {
   /* height: 355px; */
   width: 100;
 }
-#fresh{
+
+#fresh {
   color: #E95A08;
 }
 
+/* our plants */
+#our {
+  color: #E95A08;
+}
+#latest{
+  color: #E95A08;
+}
+
+.plants {
+  margin-top: 120px;
+}
+
+.plants-title {
+  color: black;
+  font-weight: bold;
+  font-size: 3.125rem;
+}
+
+.plants-description {
+  font-size: 1.3rem;
+  font-weight: 400;
+  max-width: 888px;
+  margin-top: 16px;
+}
+
+/* plants card */
+.plants-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.plants-card {
+  max-width: 270px;
+  margin-top: 49px;
+}
+
+.plants-card img {
+  max-width: 260px;
+}
+
+.plants-name {
+  font-size: 1.375rem;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.plants-price {
+  font-weight: bold;
+  font-size: 1.375rem;
+  margin-top: 10px;
+}
+
+.plants-btn {
+  background-color: #E95A08;
+  color: white;
+  border: none;
+  padding: 19px 80px;
+  margin-top: 20px;
+}
+
+/* plants lover */
+.plants-lover {
+  margin-top: 210px;
+  gap: 60px;
+}
+
+.plants-lover-title {
+  font-size: 3.125rem;
+  font-weight: bold;
+}
+
+.plants-lover-description {
+  font-size: 1.375rem;
+  font-weight: 400;
+  width: 540px;
+}
+
+.plants-lover-img {
+  width: 540px;
+  height: 100%;
+}
+/* latest deal */
+.deals{
+
+}
+.deals-info{
+  margin-top: 133px;
+}
+.deals-title{
+  font-size: 3.125rem;
+  font-weight: bold;
+}
+.deals-descrption{
+  font-size: 1.375rem;
+  font-weight: 400;
+  margin-top: 16px;
+}
+/* card styles */
+.card-container{
+  gap: 25px;
+  margin-top: 125px;
+}
+.card {
+  border-radius: 16px;
+}
+.card-title{
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+.card-description{
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  text-decoration: underline;
+}
+.card-1, .card-2{
+  height: 206px;
+  width: 367px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.card-3{
+  height: 423px;
+  width: 753px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.card-1{
+  background-image: url(/assets/deal-bloom.png);
+  margin-bottom: 10px;
+}
+.card-2{
+  background-image: url(/assets/deal-ana.png);
+}
+.card-3{
+  background-image: url(/assets/deal-zabo.png);
+}
+
+
 /* responsive */
 @media screen and (max-width: 576px) {
+
   /* navbar */
-  .navbar{
+  .navbar {
     margin-left: 14px;
     margin-right: 14px;
   }
-  .nav-hide{
+
+  .nav-hide {
     display: none;
   }
+
   /* banner */
-  .banner{
+  .banner {
     flex-direction: column-reverse;
     gap: 20px;
   }
-  .banner-title{
+
+  .banner-title {
     font-size: 1.5rem;
     margin-left: 16px;
     margin-right: 16px;
   }
-  .banner-description{
+
+  .banner-description {
     font-size: 0.85rem;
     margin-left: 16px;
     margin-right: 16px;
+  }
+
+  /* our plants */
+
+  .plants-title {
+    font-size: 1.5rem;
+  }
+
+  .plants-description {
+    font-size: 0.8rem;
+  }
+
+  .plants-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .plants-card img {
+    width: 170px;
+    margin: auto;
+  }
+
+  .plants-top {
+    margin-top: 65px;
+  }
+
+  .plants-card button {
+    width: 170px;
+    padding: 19px 30px;
+    margin-top: 20px;
+  }
+
+  /* plants lover */
+  .plants-lover {
+    display: flex;
+    flex-direction: column;
+    margin-top: 41px;
+  }
+
+  .plants-lover-img{
+    max-width: 358px;
+  }
+
+  .plants-lover-title{
+    font-size: 24px;
+  }
+  .plants-lover-description{
+    font-size: 14px;
+    width: 100%;
+  }
+  .plants-lover-tidi{
+    max-width: 361px;
+  }
+  /* latest deals */
+  .deals-title{
+    font-size: 24px;
+  }
+  .deals-descrption{
+    font-size: 14px;
+    max-width: 336px;
+  }
+  /* card style */
+  .card-container{
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-1, .card-2, .card-3{
+    width: 360px;
+    height: 185px;
   }
 }
