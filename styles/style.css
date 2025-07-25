@@ -223,21 +223,21 @@
 }
 
 .card-1 {
-  background-image: url(/assets/deal-bloom.png);
+  background-image: url("../assets/deal-bloom.png");
   margin-bottom: 10px;
 }
 
 .card-2 {
-  background-image: url(/assets/deal-ana.png);
+  background-image: url("../assets/deal-ana.png");
 }
 
 .card-3 {
-  background-image: url(/assets/deal-zabo.png);
+  background-image: url("../assets/deal-zabo.png");
 }
 
 /* join section */
 .join-section {
-  background-image: url(/assets/news-letter-bg.png);
+  background-image: url("../assets/news-letter-bg.png");
   background-size: cover;
   background-position: center;
   width: 100%;
